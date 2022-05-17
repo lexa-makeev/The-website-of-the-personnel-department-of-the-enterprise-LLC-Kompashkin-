@@ -1,0 +1,63 @@
+.main {
+    opacity: .7;
+}
+.send_anket {
+    opacity: 1;
+}
+
+.pole {
+    background-color: #3f4eb3;
+    width: 100%;
+    padding: 25px 0;
+}
+.pole .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+label {
+    font-size: 24px;
+    font-weight: 500;
+}
+input, select, textarea {
+    background-color: #1d1d1d;
+    border: none;
+    width: 489px;
+    padding: 12px 0;
+    padding-left: 45px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+}
+textarea {
+    height: 150px;
+}
+
+input:focus {
+    outline: none;
+}
+.block_form .pole {
+    margin-bottom: 13px;
+}
+.block_form button {
+    display: block;
+    margin: 20px auto;
+    width: 260px;
+    padding: 26px 0;
+    background-color: #3f4eb3;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.block_form button:hover {
+    opacity: .8;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

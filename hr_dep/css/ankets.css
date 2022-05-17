@@ -1,0 +1,36 @@
+.main {
+    opacity: .7;
+}
+.ankets {
+    opacity: 1;
+}
+
+/* sec_info */
+.block_info {
+    position: relative;
+    width: 100%;
+    background-color: #3f4eb3;
+    border-radius: 29px;
+    padding: 49px 88px;
+    display: flex;
+    justify-content: space-between;
+}
+.left_info p, .right_info p {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 400px;
+}
+.left_info p span, .right_info p span {
+    font-weight: 500;
+}
+.left_info p:last-child, .right_info p:last-child {
+    margin-bottom: 0;
+}
+.stat {
+    position: absolute;
+    bottom: 49px;
+    right: 88px;
+    font-size: 24px;
+    font-weight: 700;
+}

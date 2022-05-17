@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #F3F3F3;
+}
+body {
+    background-color: #1d1d1d;
+}
+section {
+    margin-top: 229px;
+}
+h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.back {
+    width: 100%;
+    padding: 42px 0;
+    background-color: #3f4eb3;
+}
+.form {
+    width: 600px;
+    margin: 0 auto;
+}
+label {
+    font-size: 24px;
+    font-weight: 700;
+}
+input {
+    background-color: #1d1d1d;
+    border: none;
+    width: 100%;
+    padding: 12px 0;
+    padding-left: 45px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: 500;
+}
+input:focus {
+    outline: none;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    width: 291px;
+    padding: 22px 0;
+    border-radius: 15px;
+    background-color: #1d1d1d;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+.form input, .form button {
+    margin-bottom: 24px;
+}
+.form input {
+    margin-top: 10px;
+}
+.form label {
+    margin-bottom: 9px;
+}
+button:hover {
+    opacity: .8;
+}
+.help {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.help a {
+    text-decoration: none;
+    opacity: .7;
+}
+.help a:hover {
+    opacity: 1 !important;
+}

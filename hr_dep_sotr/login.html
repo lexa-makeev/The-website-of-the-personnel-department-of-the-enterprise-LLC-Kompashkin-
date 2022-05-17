@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/login.css">
+        <title>Вход</title>
+    </head>
+    <body>
+        <section>
+            <h1>Панель авторизации ООО "Компашкин"</h1>
+            <div class="back">
+                <div class="form">
+                    <label for="login">Почта</label>
+                    <input type="text" name="login" id="login" placeholder="mail@mail.ru">
+                    <label for="pass">Пароль</label>
+                    <input type="password" name="pass" id="pass">
+                    <button type="submit">Войти</button>
+                    <div class="help">
+                        <!-- <a href="#">Забыли пароль?</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(event){
+                event.preventDefault();
+                var data = $('.form input').serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "log.php",
+                    data: data,
+                    success: function (result) {
+                        switch (result) {
+                            case "0":
+                                alert("Сбой подключения, попробуйте позже.");
+                                break;
+                            case "1":
+                                alert("Проверьте правильность введённых данных.");
+                                break;
+                            case "2":
+                                alert("Произошла ошибка, попробуйте позже.");
+                                break;
+                            case "3":
+                                window.location.href = "index.php";
+                                break;
+                            case "4":
+                                alert("Такая почта уже существует.");
+                                break;
+                            default:
+                                alert("Произошла ошибка, попробуйте позже.");
+                                break;
+                        }
+                    },
+                    error: function (error) {
+
+                    }
+                });
+            });
+        });
+    </script>
+</html>

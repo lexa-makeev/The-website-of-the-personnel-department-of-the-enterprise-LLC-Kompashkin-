@@ -1,0 +1,27 @@
+.main {
+    opacity: .7;
+}
+.send_anket {
+    opacity: 1;
+}
+.head_sotr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.head_sotr p {
+    font-size: 24px;
+    width: 210px;
+    text-align: center;
+    font-weight: 400;
+}
+.btn {
+    margin-top: 28px;
+    justify-content: center !important;
+}
+.block_status .container p {
+    font-size: 24px;
+    width: 210px;
+    text-align: center;
+    font-weight: 700;
+}
