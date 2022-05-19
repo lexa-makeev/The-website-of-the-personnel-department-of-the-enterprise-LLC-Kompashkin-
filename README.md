@@ -16,5 +16,5 @@
 ### Группа ИКБО-18-19
 * Макеев Алексей [lexa-makeev](https://github.com/lexa-makeev) 
 * Журавлев Александр [puplodik](https://github.com/puplodik)
-* Кузьмин Андрей [](https://github.com/) 
+* Кузьмин Андрей [ANKquil](https://github.com/ANKquil) 
 * Савкин Дмитрий [bydywiigenii](https://github.com/bydywiigenii) 
